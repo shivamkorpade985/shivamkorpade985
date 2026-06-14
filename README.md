@@ -49,7 +49,6 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 - 🥇 **Winner** — Two Hero Code Quest, SGU Kolhapur
 - 🥈 **1st Runner-Up** — AI Future Frame Competition, SVPM Baramati
 - 🥉 **2nd Runner-Up** — Stranger Code, KITCOEK Kolhapur
-- 🎓 **CGPA: 9.00** — KIT's College of Engineering, Kolhapur
 - 🏢 **Core Member** — Training & Placement Cell | Coordinated recruitment for 20+ companies
 
 ---
@@ -199,15 +198,6 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=shivamkorpade985&theme=tokyonight&hide_border=true" />
-</p>
-
----
-
-### 📜 Certifications
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Java%20Full%20Stack%20Dev-CodeForSuccess-0052D4?style=for-the-badge&logo=java&logoColor=white">
-  <img src="https://img.shields.io/badge/Intro%20to%20Generative%20AI-Google-4285F4?style=for-the-badge&logo=google&logoColor=white">
 </p>
 
 ---
