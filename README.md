@@ -24,15 +24,18 @@ location    : Kolhapur, Maharashtra, India
 education   : "B.Tech CSE (Data Science) @ KIT's College of Engineering, Kolhapur"
 cgpa        : 9.00 / 10.0
 
-role        : Java Backend Developer | Spring Boot | Microservices
+role        : Java Full Stack Developer | Spring Boot | Microservices
 
 currently_building:
   - "PulseCare — Production-ready 7-service Microservices Hospital Management System"
-  - "Exploring: System Design, Redis Caching, Distributed Tracing, AWS"
+  - "Exploring: System Design, Redis Caching, Kafka, Distributed Tracing, Docker, AWS"
 
 focus:
   - "Spring Boot & Spring Cloud Microservices"
+  - "Core Java & Object-Oriented Programming"
+  - "MySQL & Database Design"
   - "JWT Authentication & RBAC"
+  - "AWS Cloud Fundamentals"
   - "REST APIs & API Gateway"
   - "Data Structures & Algorithms (Java)"
 
