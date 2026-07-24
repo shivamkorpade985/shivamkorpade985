@@ -7,6 +7,7 @@
 </div>
 
 <p align="center">
+  <a href="https://shivam-korpade.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/▲_PORTFOLIO-8A00FF?style=for-the-badge&logoColor=white" alt="Portfolio"></a>
   <a href="https://www.linkedin.com/in/shivam-korpade-49a06b2bb/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="mailto:shivamkorpade910@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
   <a href="https://medium.com/@shivamkorpade985"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white"></a>
