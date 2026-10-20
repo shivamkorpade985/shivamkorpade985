@@ -182,6 +182,16 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 
 ---
 
+### 📚 Daily Learning Log
+
+A small daily prompt to help me capture one genuine takeaway from my learning or project work. The generated prompt is a nudge; I should add my own notes when I complete it.
+
+<!-- daily-learning-log -->
+<!-- Entries are added here automatically. -->
+<!-- /daily-learning-log -->
+
+---
+
 ### 🐍 Contribution Snake
 
 <p align="center">
