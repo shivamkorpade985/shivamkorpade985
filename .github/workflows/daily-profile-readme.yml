@@ -58,7 +58,6 @@ jobs:
               "Review one Docker, CI/CD, or deployment concept.",
               "Summarize one meaningful lesson from a project you worked on."
           ]
-          # Rotate by date so the note changes daily without adding random noise.
           day_number = datetime.now(timezone.utc).timetuple().tm_yday
           topic = topics[day_number % len(topics)]
           entry = f"\n- **{today}** — Daily learning prompt: {topic}\n"
@@ -76,8 +75,11 @@ jobs:
             echo "README.md is already up to date; skipping commit."
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Use the profile's existing GitHub no-reply identity so eligible commits
+          # can be attributed to the account. These are automated README-note commits,
+          # not a substitute for genuine coding or project contributions.
+          git config user.name "Shivam Govind Korpade"
+          git config user.email "158841085+shivamkorpade985@users.noreply.github.com"
           git add README.md
           git commit -m "docs: add daily learning prompt"
           git push
