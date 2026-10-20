@@ -1,0 +1,83 @@
+name: Daily Profile README Improvement
+
+on:
+  schedule:
+    # Runs daily at 12:17 UTC (17:47 IST). GitHub scheduled runs can be delayed.
+    - cron: "17 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-profile-readme
+  cancel-in-progress: false
+
+jobs:
+  improve-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Make a small, useful daily README update
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 <<'PY'
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          path = Path("README.md")
+          content = path.read_text(encoding="utf-8")
+          marker = "<!-- daily-learning-log -->"
+          end_marker = "<!-- /daily-learning-log -->"
+
+          if marker not in content or end_marker not in content:
+              print("Daily learning log markers are missing; refusing to modify README.")
+              raise SystemExit(1)
+
+          today = datetime.now(timezone.utc).date().isoformat()
+          start = content.index(marker) + len(marker)
+          end = content.index(end_marker, start)
+          section = content[start:end]
+
+          if today in section:
+              print(f"A daily entry for {today} already exists; no change needed.")
+              raise SystemExit(0)
+
+          topics = [
+              "Review one Java or Spring Boot concept and add a concise takeaway.",
+              "Practice one small REST API design improvement.",
+              "Review a microservices concept such as service discovery or resilience.",
+              "Write down one database indexing or SQL optimization lesson.",
+              "Review one testing, validation, or exception-handling practice.",
+              "Study one system-design trade-off and summarize it in a sentence.",
+              "Review one Git habit that makes code changes safer and easier to trace.",
+              "Refresh one data-structures or algorithms concept with a short note.",
+              "Review one Docker, CI/CD, or deployment concept.",
+              "Summarize one meaningful lesson from a project you worked on."
+          ]
+          # Rotate by date so the note changes daily without adding random noise.
+          day_number = datetime.now(timezone.utc).timetuple().tm_yday
+          topic = topics[day_number % len(topics)]
+          entry = f"\n- **{today}** — Daily learning prompt: {topic}\n"
+          updated_section = section.rstrip() + entry
+          updated = content[:start] + updated_section + content[end:]
+          path.write_text(updated, encoding="utf-8")
+          print(f"Added the {today} learning prompt to README.md.")
+          PY
+
+      - name: Commit and push if README changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- README.md; then
+            echo "README.md is already up to date; skipping commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "docs: add daily learning prompt"
+          git push
