@@ -188,6 +188,7 @@ A small daily prompt to help me capture one genuine takeaway from my learning or
 
 <!-- daily-learning-log -->
 <!-- Entries are added here automatically. -->
+- **2026-10-20** — Daily learning prompt: Write down one database indexing or SQL optimization lesson.
 <!-- /daily-learning-log -->
 
 ---
