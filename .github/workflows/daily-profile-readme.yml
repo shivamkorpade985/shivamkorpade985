@@ -2,8 +2,9 @@ name: Daily Profile README Improvement
 
 on:
   schedule:
-    # Runs daily at 12:17 UTC (17:47 IST). GitHub scheduled runs can be delayed.
-    - cron: "17 12 * * *"
+    # Four daily retries (UTC): 08:47, 13:47, 18:47 and 23:47 India time.
+    # The script writes at most one entry per India calendar date.
+    - cron: "17 3,8,13,18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -25,8 +26,9 @@ jobs:
         run: |
           set -euo pipefail
           python3 <<'PY'
-          from datetime import datetime, timezone
+          from datetime import datetime
           from pathlib import Path
+          from zoneinfo import ZoneInfo
 
           path = Path("README.md")
           content = path.read_text(encoding="utf-8")
@@ -37,7 +39,8 @@ jobs:
               print("Daily learning log markers are missing; refusing to modify README.")
               raise SystemExit(1)
 
-          today = datetime.now(timezone.utc).date().isoformat()
+          now = datetime.now(ZoneInfo("Asia/Kolkata"))
+          today = now.date().isoformat()
           start = content.index(marker) + len(marker)
           end = content.index(end_marker, start)
           section = content[start:end]
@@ -58,8 +61,7 @@ jobs:
               "Review one Docker, CI/CD, or deployment concept.",
               "Summarize one meaningful lesson from a project you worked on."
           ]
-          day_number = datetime.now(timezone.utc).timetuple().tm_yday
-          topic = topics[day_number % len(topics)]
+          topic = topics[now.timetuple().tm_yday % len(topics)]
           entry = f"\n- **{today}** — Daily learning prompt: {topic}\n"
           updated_section = section.rstrip() + entry
           updated = content[:start] + updated_section + content[end:]
@@ -75,9 +77,6 @@ jobs:
             echo "README.md is already up to date; skipping commit."
             exit 0
           fi
-          # Use the profile's existing GitHub no-reply identity so eligible commits
-          # can be attributed to the account. These are automated README-note commits,
-          # not a substitute for genuine coding or project contributions.
           git config user.name "Shivam Govind Korpade"
           git config user.email "158841085+shivamkorpade985@users.noreply.github.com"
           git add README.md
