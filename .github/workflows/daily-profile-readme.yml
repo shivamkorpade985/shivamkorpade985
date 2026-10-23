@@ -1,9 +1,9 @@
-name: Daily Profile README Improvement
+name: Daily Profile README Quote
 
 on:
   schedule:
-    # Four daily retries (UTC): 08:47, 13:47, 18:47 and 23:47 India time.
-    # The script writes at most one entry per India calendar date.
+    # Retry during the day in case a scheduled run is delayed.
+    # The quote changes by India-local calendar day, at most once per day.
     - cron: "17 3,8,13,18 * * *"
   workflow_dispatch:
 
@@ -15,13 +15,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  improve-readme:
+  refresh-quote:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout profile repository
         uses: actions/checkout@v4
 
-      - name: Make a small, useful daily README update
+      - name: Replace the single daily learning quote
         shell: bash
         run: |
           set -euo pipefail
@@ -32,53 +32,83 @@ jobs:
 
           path = Path("README.md")
           content = path.read_text(encoding="utf-8")
-          marker = "<!-- daily-learning-log -->"
-          end_marker = "<!-- /daily-learning-log -->"
+          marker = "<!-- daily-learning-quote -->"
+          end_marker = "<!-- /daily-learning-quote -->"
 
           if marker not in content or end_marker not in content:
-              print("Daily learning log markers are missing; refusing to modify README.")
-              raise SystemExit(1)
+              raise SystemExit("Daily learning quote markers are missing; refusing to edit README.md.")
 
-          now = datetime.now(ZoneInfo("Asia/Kolkata"))
-          today = now.date().isoformat()
           start = content.index(marker) + len(marker)
           end = content.index(end_marker, start)
-          section = content[start:end]
+          current = content[start:end].strip()
 
-          if today in section:
-              print(f"A daily entry for {today} already exists; no change needed.")
+          quotes = [
+              "Small, consistent improvements turn difficult problems into familiar patterns.",
+              "Good engineering is the art of making the next change easier.",
+              "A bug understood deeply is a lesson that can outlast the fix.",
+              "Clarity is a feature: write code and explanations that reduce guesswork.",
+              "Reliable systems are built by respecting the edge cases.",
+              "Progress comes from shipping small slices, learning, and iterating.",
+              "A useful experiment teaches you something even when the hypothesis fails.",
+              "Simple designs are earned by understanding the problem well.",
+              "Every thoughtful review is an opportunity to improve the whole team.",
+              "Debugging gets easier when observations are separated from assumptions.",
+              "Consistency beats intensity when the goal is lasting expertise.",
+              "Readable code is a kindness to your future self and your teammates.",
+              "Measure first; optimize where the evidence points.",
+              "Strong fundamentals make new frameworks easier to learn.",
+              "A dependable API makes its behavior predictable, especially when things fail.",
+              "The best abstraction removes complexity without hiding the truth.",
+              "Treat feedback as data, then turn it into a better next attempt.",
+              "Good tests describe behavior people can rely on.",
+              "A clear commit tells the story of one intentional change.",
+              "Resilience begins with expecting dependencies to fail.",
+              "Curiosity finds the question; discipline turns its answer into skill.",
+              "A database query is only fast enough when the real workload says so.",
+              "The fastest path forward often starts by reproducing the problem.",
+              "Choose consistency over cleverness when maintainability matters.",
+              "A clean architecture keeps important decisions easy to find.",
+              "Learning compounds when each discovery is captured and revisited.",
+              "Secure defaults make the safe path the easy path.",
+              "Good documentation preserves the reasoning behind the decision.",
+              "Distributed systems reward explicit contracts and honest failure handling.",
+              "Automation is most useful when it makes a real, repeatable task safer.",
+              "Don't just fix the symptom; verify the cause.",
+              "Every refactor should make the code easier to reason about.",
+              "A thoughtful trade-off is better than an accidental compromise.",
+              "The best tools amplify good habits; they don't replace them.",
+              "When a system surprises you, improve both the code and your mental model.",
+              "Ship the smallest complete improvement that creates real value.",
+              "Version control is a record of decisions, not just a place to store files.",
+              "Performance work starts with a measurable question.",
+              "Strong engineers keep learning, especially when the answer is uncomfortable.",
+              "A stable system is built from small, observable, recoverable steps."
+          ]
+
+          now = datetime.now(ZoneInfo("Asia/Kolkata"))
+          # Same day => same quote, so retries don't create noisy repeat commits.
+          quote = quotes[now.date().toordinal() % len(quotes)]
+          replacement = f"\n> “{quote}”\n"
+
+          if current == replacement.strip():
+              print(f"Today's quote is already present ({now.date().isoformat()}); no change needed.")
               raise SystemExit(0)
 
-          topics = [
-              "Review one Java or Spring Boot concept and add a concise takeaway.",
-              "Practice one small REST API design improvement.",
-              "Review a microservices concept such as service discovery or resilience.",
-              "Write down one database indexing or SQL optimization lesson.",
-              "Review one testing, validation, or exception-handling practice.",
-              "Study one system-design trade-off and summarize it in a sentence.",
-              "Review one Git habit that makes code changes safer and easier to trace.",
-              "Refresh one data-structures or algorithms concept with a short note.",
-              "Review one Docker, CI/CD, or deployment concept.",
-              "Summarize one meaningful lesson from a project you worked on."
-          ]
-          topic = topics[now.timetuple().tm_yday % len(topics)]
-          entry = f"\n- **{today}** — Daily learning prompt: {topic}\n"
-          updated_section = section.rstrip() + entry
-          updated = content[:start] + updated_section + content[end:]
+          updated = content[:start] + replacement + content[end:]
           path.write_text(updated, encoding="utf-8")
-          print(f"Added the {today} learning prompt to README.md.")
+          print(f"Replaced the quote for India-local date {now.date().isoformat()}.")
           PY
 
-      - name: Commit and push if README changed
+      - name: Commit and push if the quote changed
         shell: bash
         run: |
           set -euo pipefail
           if git diff --quiet -- README.md; then
-            echo "README.md is already up to date; skipping commit."
+            echo "The quote is already current; skipping commit."
             exit 0
           fi
           git config user.name "Shivam Govind Korpade"
           git config user.email "158841085+shivamkorpade985@users.noreply.github.com"
           git add README.md
-          git commit -m "docs: add daily learning prompt"
+          git commit -m "docs: refresh daily learning quote"
           git push
