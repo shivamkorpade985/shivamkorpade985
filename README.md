@@ -182,17 +182,11 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 
 ---
 
-### 📚 Daily Learning Log
+### 📖 Daily Learning Quote
 
-A small daily prompt to help me capture one genuine takeaway from my learning or project work. The generated prompt is a nudge; I should add my own notes when I complete it.
-
-<!-- daily-learning-log -->
-<!-- Entries are added here automatically. -->
-- **2026-10-20** — Daily learning prompt: Write down one database indexing or SQL optimization lesson.
-- **2026-10-21** — Daily learning prompt: Review one testing, validation, or exception-handling practice.
-- **2026-10-22** — Daily learning prompt: Study one system-design trade-off and summarize it in a sentence.
-- **2026-10-23** — Daily learning prompt: Review one Git habit that makes code changes safer and easier to trace.
-<!-- /daily-learning-log -->
+<!-- daily-learning-quote -->
+> “Progress is a working slice, made clearer with every iteration.”
+<!-- /daily-learning-quote -->
 
 ---
 
