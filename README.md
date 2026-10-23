@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “A thoughtful trade-off is better than an accidental compromise.”
+> “The best tools amplify good habits; they don't replace them.”
 <!-- /daily-learning-quote -->
 
 ---
