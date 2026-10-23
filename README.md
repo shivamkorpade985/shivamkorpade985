@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Progress is a working slice, made clearer with every iteration.”
+> “A thoughtful trade-off is better than an accidental compromise.”
 <!-- /daily-learning-quote -->
 
 ---
