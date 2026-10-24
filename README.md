@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “The best tools amplify good habits; they don't replace them.”
+> “When a system surprises you, improve both the code and your mental model.”
 <!-- /daily-learning-quote -->
 
 ---
