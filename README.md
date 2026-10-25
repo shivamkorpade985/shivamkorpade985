@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “When a system surprises you, improve both the code and your mental model.”
+> “Ship the smallest complete improvement that creates real value.”
 <!-- /daily-learning-quote -->
 
 ---
