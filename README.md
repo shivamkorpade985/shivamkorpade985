@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Version control is a record of decisions, not just a place to store files.”
+> “Performance work starts with a measurable question.”
 <!-- /daily-learning-quote -->
 
 ---
