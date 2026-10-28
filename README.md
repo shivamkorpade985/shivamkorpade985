@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Performance work starts with a measurable question.”
+> “Strong engineers keep learning, especially when the answer is uncomfortable.”
 <!-- /daily-learning-quote -->
 
 ---
