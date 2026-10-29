@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Strong engineers keep learning, especially when the answer is uncomfortable.”
+> “A stable system is built from small, observable, recoverable steps.”
 <!-- /daily-learning-quote -->
 
 ---
