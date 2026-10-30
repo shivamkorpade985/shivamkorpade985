@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “A stable system is built from small, observable, recoverable steps.”
+> “Small, consistent improvements turn difficult problems into familiar patterns.”
 <!-- /daily-learning-quote -->
 
 ---
