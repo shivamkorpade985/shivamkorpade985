@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Small, consistent improvements turn difficult problems into familiar patterns.”
+> “Good engineering is the art of making the next change easier.”
 <!-- /daily-learning-quote -->
 
 ---
