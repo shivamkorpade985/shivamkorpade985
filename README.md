@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “A bug understood deeply is a lesson that can outlast the fix.”
+> “Clarity is a feature: write code and explanations that reduce guesswork.”
 <!-- /daily-learning-quote -->
 
 ---
