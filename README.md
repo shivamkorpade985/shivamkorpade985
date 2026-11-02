@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Good engineering is the art of making the next change easier.”
+> “A bug understood deeply is a lesson that can outlast the fix.”
 <!-- /daily-learning-quote -->
 
 ---
