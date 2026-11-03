@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Clarity is a feature: write code and explanations that reduce guesswork.”
+> “Reliable systems are built by respecting the edge cases.”
 <!-- /daily-learning-quote -->
 
 ---
