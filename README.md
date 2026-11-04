@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Reliable systems are built by respecting the edge cases.”
+> “Progress comes from shipping small slices, learning, and iterating.”
 <!-- /daily-learning-quote -->
 
 ---
