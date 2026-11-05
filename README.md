@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Progress comes from shipping small slices, learning, and iterating.”
+> “A useful experiment teaches you something even when the hypothesis fails.”
 <!-- /daily-learning-quote -->
 
 ---
