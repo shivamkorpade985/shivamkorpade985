@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “A useful experiment teaches you something even when the hypothesis fails.”
+> “Simple designs are earned by understanding the problem well.”
 <!-- /daily-learning-quote -->
 
 ---
