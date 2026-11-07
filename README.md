@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Simple designs are earned by understanding the problem well.”
+> “Every thoughtful review is an opportunity to improve the whole team.”
 <!-- /daily-learning-quote -->
 
 ---
