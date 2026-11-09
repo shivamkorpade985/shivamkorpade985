@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Every thoughtful review is an opportunity to improve the whole team.”
+> “Debugging gets easier when observations are separated from assumptions.”
 <!-- /daily-learning-quote -->
 
 ---
