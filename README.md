@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Debugging gets easier when observations are separated from assumptions.”
+> “Consistency beats intensity when the goal is lasting expertise.”
 <!-- /daily-learning-quote -->
 
 ---
