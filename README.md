@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Consistency beats intensity when the goal is lasting expertise.”
+> “Readable code is a kindness to your future self and your teammates.”
 <!-- /daily-learning-quote -->
 
 ---
