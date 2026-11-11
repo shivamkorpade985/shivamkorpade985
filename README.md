@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Readable code is a kindness to your future self and your teammates.”
+> “Measure first; optimize where the evidence points.”
 <!-- /daily-learning-quote -->
 
 ---
