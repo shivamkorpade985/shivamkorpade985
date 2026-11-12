@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Measure first; optimize where the evidence points.”
+> “Strong fundamentals make new frameworks easier to learn.”
 <!-- /daily-learning-quote -->
 
 ---
