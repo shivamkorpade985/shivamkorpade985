@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Strong fundamentals make new frameworks easier to learn.”
+> “A dependable API makes its behavior predictable, especially when things fail.”
 <!-- /daily-learning-quote -->
 
 ---
