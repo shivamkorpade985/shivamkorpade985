@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “The best abstraction removes complexity without hiding the truth.”
+> “Treat feedback as data, then turn it into a better next attempt.”
 <!-- /daily-learning-quote -->
 
 ---
