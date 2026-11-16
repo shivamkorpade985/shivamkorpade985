@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Treat feedback as data, then turn it into a better next attempt.”
+> “Good tests describe behavior people can rely on.”
 <!-- /daily-learning-quote -->
 
 ---
