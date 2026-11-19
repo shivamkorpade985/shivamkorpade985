@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Resilience begins with expecting dependencies to fail.”
+> “Curiosity finds the question; discipline turns its answer into skill.”
 <!-- /daily-learning-quote -->
 
 ---
