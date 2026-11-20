@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Curiosity finds the question; discipline turns its answer into skill.”
+> “A database query is only fast enough when the real workload says so.”
 <!-- /daily-learning-quote -->
 
 ---
