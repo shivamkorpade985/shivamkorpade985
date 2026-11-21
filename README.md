@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “A database query is only fast enough when the real workload says so.”
+> “The fastest path forward often starts by reproducing the problem.”
 <!-- /daily-learning-quote -->
 
 ---
