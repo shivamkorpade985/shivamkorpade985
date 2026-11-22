@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “The fastest path forward often starts by reproducing the problem.”
+> “Choose consistency over cleverness when maintainability matters.”
 <!-- /daily-learning-quote -->
 
 ---
