@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Choose consistency over cleverness when maintainability matters.”
+> “A clean architecture keeps important decisions easy to find.”
 <!-- /daily-learning-quote -->
 
 ---
