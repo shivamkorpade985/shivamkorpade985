@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Learning compounds when each discovery is captured and revisited.”
+> “Secure defaults make the safe path the easy path.”
 <!-- /daily-learning-quote -->
 
 ---
