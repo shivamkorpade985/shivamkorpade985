@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Secure defaults make the safe path the easy path.”
+> “Good documentation preserves the reasoning behind the decision.”
 <!-- /daily-learning-quote -->
 
 ---
