@@ -185,7 +185,7 @@ fun_fact    : "200+ LeetCode problems solved in Java 🚀"
 ### 📖 Daily Learning Quote
 
 <!-- daily-learning-quote -->
-> “Good documentation preserves the reasoning behind the decision.”
+> “Distributed systems reward explicit contracts and honest failure handling.”
 <!-- /daily-learning-quote -->
 
 ---
